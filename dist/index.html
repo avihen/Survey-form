@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title" class="header__title">freeCodeCamp Survey Form</h1>
+      <p id="description" class="header__description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form" class="form">
+        <ul>
+          <li>
+            <label class="label form__label" id="name-label" for="name"
+              >Name</label
+            >
+            <input
+              class="form__input"
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </li>
+          <li>
+            <label class="label form__label" id="email-label" for="email"
+              >Email</label
+            >
+            <input
+              class="form__input"
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </li>
+          <li>
+            <label class="label form__label" id="number-label" for="number"
+              >Age (optional)</label
+            >
+            <input
+              class="form__input"
+              id="number"
+              type="number"
+              placeholder="Age"
+              min="10"
+              max="99"
+            />
+          </li>
+          <li>
+            <p class="form__label">
+              Which option best describes your current role?
+            </p>
+            <select class="form__input" id="dropdown" name="role">
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full time job</option>
+              <option value="learner">Full time learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </li>
+          <li>
+            <p class="form__label">
+              Would you recommend freeCodeCamp to a friend?
+            </p>
+            <input
+              class="form__radio"
+              type="radio"
+              id="definitely"
+              name="recommend"
+              value="definitely"
+            />
+            <label class="form__label" for="definitely">Definitely</label><br />
+            <input
+              class="form__radio"
+              type="radio"
+              id="maybe"
+              name="recommend"
+              value="maybe"
+            />
+            <label class="form__label" for="maybe">Maybe</label><br />
+            <input
+              class="form__radio"
+              type="radio"
+              id="not"
+              name="recommend"
+              value="not"
+            />
+            <label class="form__label" for="not">Not sure</label><br />
+          </li>
+          <li>
+            <p class="form__label">
+              What would you like to improve? (Check all that apply)
+            </p>
+            <input
+              class="form__check"
+              type="checkbox"
+              id="front-end"
+              name="front-end"
+              value="Front-end"
+            />
+            <label class="form__label" for="fron-end">Front-end project</label
+            ><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="back-end"
+              name="back-end"
+              value="Back-end"
+            />
+            <label class="form__label" for="back-end">Back-end project</label
+            ><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="data"
+              name="data"
+              value="Data"
+            />
+            <label class="form__label" for="data">Data Visualization</label
+            ><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="challenges"
+              name="challenges"
+              value="Challenges"
+            />
+            <label class="form__label" for="challenges">Challenges</label><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="open-source"
+              name="open-source"
+              value="Open-source"
+            />
+            <label class="form__label" for="open-source"
+              >Open Source Community</label
+            ><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="gitter"
+              name="gitter"
+              value="Gitter"
+            />
+            <label class="form__label" for="gitter">Gitter help rooms</label
+            ><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="videos"
+              name="videos"
+              value="Videos"
+            />
+            <label class="form__label" for="videos">Videos</label><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="meetups"
+              name="meetups"
+              value="Meetups"
+            />
+            <label class="form__label" for="meetups">City Meetups</label><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="wiki"
+              name="wiki"
+              value="Wiki"
+            />
+            <label class="form__label" for="wiki">Wiki</label><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="forum"
+              name="forum"
+              value="Forum"
+            />
+            <label class="form__label" for="forum">Forum</label><br />
+            <input
+              class="form__check"
+              type="checkbox"
+              id="additional"
+              name="Additional"
+              value="additional"
+            />
+            <label class="form__label" for="additional"
+              >Additional Courses</label
+            ><br />
+          </li>
+          <li>
+            <p class="form__label">Any comments or suggestions?</p>
+            <textarea
+              class="form__input comments"
+              id="comments"
+              name="comments"
+              placeholder="Enter you commets here..."
+            ></textarea>
+          </li>
+          <button class="form__input form__btn">Submit</button>
+        </ul>
+      </form>
+    </main>
+  </body>
+</html>
